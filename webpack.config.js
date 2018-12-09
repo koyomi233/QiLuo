@@ -1,8 +1,24 @@
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry:  __dirname + "/src/main.js",
   output: {
     path: __dirname + "/dist",
     filename: "bundle.js"
+  },
+  devtool: 'cheap-module-eval-source-map',
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    })
+  ],
+  devServer: {
+    clientLogLevel: 'warning',
+    port: 8080,
+    open: true,
+    contentBase: '/dist'
   },
   module: {
     rules: [
