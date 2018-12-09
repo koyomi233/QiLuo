@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -10,6 +11,7 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: 'index.html'
     })
