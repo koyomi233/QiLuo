@@ -152,8 +152,6 @@
 
 <style>
 
-  @import url("//unpkg.com/muse-ui@3.0.1/dist/muse-ui.css");
-
   .login-container {
 
     -webkit-border-radius: 5px;
