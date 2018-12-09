@@ -6,7 +6,7 @@
 
 <script>
   import axios from 'axios'
-  import Picturelist from './PictureList'
+  import Picturelist from './PictureList.vue'
 
   export default {
     name: 'upload',

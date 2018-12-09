@@ -6,7 +6,7 @@
 
 <script>
   import axios from 'axios'
-  import UploadFile from './UploadFile'
+  import UploadFile from './UploadFile.vue'
 
   export default {
     name: 'upload',

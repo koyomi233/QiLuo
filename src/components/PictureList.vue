@@ -35,7 +35,7 @@
 
 <script>
   import axios from "axios";
-  import PictureService from '@/service/pictureService';
+  import PictureService from '../service/pictureService.js';
 
   export default {
     data() {

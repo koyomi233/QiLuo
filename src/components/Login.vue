@@ -48,7 +48,7 @@
 </template>
 
 <script>
-  import AccountService from '@/service/accountService'
+  import AccountService from '../service/accountService.js'
 
   export default {
     name: 'login',

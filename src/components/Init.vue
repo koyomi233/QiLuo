@@ -46,8 +46,8 @@
   import Vue from 'vue'
   import Vuex from 'vuex'
   import Homepage from "./Homepage.vue"
-  import ListPage from "./ListPage"
-  import Upload from "./Upload"
+  import ListPage from "./ListPage.vue"
+  import Upload from "./Upload.vue"
 
   Vue.use(Vuex)
 

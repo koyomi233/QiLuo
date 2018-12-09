@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Init from '@/components/Init'
-import Login from '@/components/Login'
-import SignUp from '@/components/SignUp'
-import ListPage from '@/components/ListPage'
+import Init from '../components/Init.vue'
+import Login from '../components/Login.vue'
+import SignUp from '../components/SignUp.vue'
+import ListPage from '../components/ListPage.vue'
 
 Vue.use(Router)
 
