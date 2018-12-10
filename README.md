@@ -238,7 +238,7 @@ a url hook. The best way to test the code I think, is to set click method as a h
              ├────────────────────────────────────────────────────────────────────────────┤
              │ ✔ Upload.spec.js                  00:18      6      6      -      -      - │
              └────────────────────────────────────────────────────────────────────────────┘
-               All specs passed!                 01:08     19     19      -      -      -  
+               All specs passed!                 01:08     19     19      -      -      -
 
 
 
