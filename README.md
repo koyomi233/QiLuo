@@ -69,181 +69,186 @@ a url hook. The best way to test the code I think, is to set click method as a h
      $ npx cypress run
 
 
-(Run Starting)
+         (Run Starting)
 
-  ┌────────────────────────────────────────────────────────────────────────────┐
-  │ Cypress:  3.1.3                                                            │
-  │ Browser:  Electron 59 (headless)                                           │
-  │ Specs:    4 found (Card.spec.js, LeftControl.spec.js, Login.spec.js, Uplo… │
-  └────────────────────────────────────────────────────────────────────────────┘
-
-
-────────────────────────────────────────────────────────────────────────────────
-
-  Running: Card.spec.js...                                             (1 of 4)
+          ┌────────────────────────────────────────────────────────────────────────────┐
+          │ Cypress:  3.1.3                                                            │
+          │ Browser:  Electron 59 (headless)                                           │
+          │ Specs:    4 found (Card.spec.js, LeftControl.spec.js, Login.spec.js, Uplo… │
+          └────────────────────────────────────────────────────────────────────────────┘
 
 
-  Card
-    ✓ should contain an alert on the top (9519ms)
-    mu-card
-      ✓ should return mu-card (4584ms)
-      ✓ card should contain two button (1855ms)
-      ✓ card should contain avatar (1746ms)
-      ✓ card should contain image (1461ms)
+        ────────────────────────────────────────────────────────────────────────────────
+
+          Running: Card.spec.js...                                             (1 of 4)
+
+          Card
+              ✓ should contain an alert on the top (9519ms)
+              mu-card
+                ✓ should return mu-card (4584ms)
+                ✓ card should contain two button (1855ms)
+                ✓ card should contain avatar (1746ms)
+                ✓ card should contain image (1461ms)
 
 
-  5 passing (20s)
+            5 passing (20s)
 
 
-  (Results)
+            (Results)
 
-  ┌────────────────────────────┐
-  │ Tests:        5            │
-  │ Passing:      5            │
-  │ Failing:      0            │
-  │ Pending:      0            │
-  │ Skipped:      0            │
-  │ Screenshots:  0            │
-  │ Video:        true         │
-  │ Duration:     19 seconds   │
-  │ Spec Ran:     Card.spec.js │
-  └────────────────────────────┘
-
-
-  (Video)
-
-  - Started processing:   Compressing to 32 CRF
-  - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/Card.spec.js.mp4 (9 seconds)
+            ┌────────────────────────────┐
+            │ Tests:        5            │
+            │ Passing:      5            │
+            │ Failing:      0            │
+            │ Pending:      0            │
+            │ Skipped:      0            │
+            │ Screenshots:  0            │
+            │ Video:        true         │
+            │ Duration:     19 seconds   │
+            │ Spec Ran:     Card.spec.js │
+            └────────────────────────────┘
 
 
-────────────────────────────────────────────────────────────────────────────────
+            (Video)
 
-  Running: LeftControl.spec.js...                                      (2 of 4)
+            - Started processing:   Compressing to 32 CRF
+            - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/Card.spec.js.mp4 (9 seconds)
 
+           ────────────────────────────────────────────────────────────────────────────────
 
-  LeftControl
-    ✓ Whether it contains a left control (7147ms)
-    left control
-      ✓ Has a menu contained a button (3786ms)
-      ✓ should have a invisible list (1788ms)
+             Running: LeftControl.spec.js...                                      (2 of 4)
 
 
-  3 passing (13s)
+             LeftControl
+               ✓ Whether it contains a left control (7147ms)
+               left control
+                 ✓ Has a menu contained a button (3786ms)
+                 ✓ should have a invisible list (1788ms)
 
 
-  (Results)
-
-  ┌───────────────────────────────────┐
-  │ Tests:        3                   │
-  │ Passing:      3                   │
-  │ Failing:      0                   │
-  │ Pending:      0                   │
-  │ Skipped:      0                   │
-  │ Screenshots:  0                   │
-  │ Video:        true                │
-  │ Duration:     13 seconds          │
-  │ Spec Ran:     LeftControl.spec.js │
-  └───────────────────────────────────┘
+             3 passing (13s)
 
 
-  (Video)
+             (Results)
 
-  - Started processing:   Compressing to 32 CRF
-  - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/LeftControl.spec.js.mp4 (5 seconds)
-
-
-────────────────────────────────────────────────────────────────────────────────
-
-  Running: Login.spec.js...                                            (3 of 4)
-
-
-  Login
-    ✓ should have a intorduction (8435ms)
-    ✓ Type into two forms (3401ms)
-    ✓ should go to the sign up page (1175ms)
-    Click login button
-      ✓ should allow the login requirement (1815ms)
-      ✓ should return an error because of the wrong usename and password (2022ms)
+             ┌───────────────────────────────────┐
+             │ Tests:        3                   │
+             │ Passing:      3                   │
+             │ Failing:      0                   │
+             │ Pending:      0                   │
+             │ Skipped:      0                   │
+             │ Screenshots:  0                   │
+             │ Video:        true                │
+             │ Duration:     13 seconds          │
+             │ Spec Ran:     LeftControl.spec.js │
+             └───────────────────────────────────┘
 
 
-  5 passing (17s)
+             (Video)
+
+             - Started processing:   Compressing to 32 CRF
+             - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/LeftControl.spec.js.mp4 (5 seconds)
+
+           ────────────────────────────────────────────────────────────────────────────────
+
+             Running: Login.spec.js...                                            (3 of 4)
 
 
-  (Results)
-
-  ┌─────────────────────────────┐
-  │ Tests:        5             │
-  │ Passing:      5             │
-  │ Failing:      0             │
-  │ Pending:      0             │
-  │ Skipped:      0             │
-  │ Screenshots:  0             │
-  │ Video:        true          │
-  │ Duration:     17 seconds    │
-  │ Spec Ran:     Login.spec.js │
-  └─────────────────────────────┘
+             Login
+               ✓ should have a intorduction (8435ms)
+               ✓ Type into two forms (3401ms)
+               ✓ should go to the sign up page (1175ms)
+               Click login button
+                 ✓ should allow the login requirement (1815ms)
+                 ✓ should return an error because of the wrong usename and password (2022ms)
 
 
-  (Video)
-
-  - Started processing:   Compressing to 32 CRF
-  - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/Login.spec.js.mp4 (6 seconds)
+             5 passing (17s)
 
 
-────────────────────────────────────────────────────────────────────────────────
+             (Results)
 
-  Running: Upload.spec.js...                                           (4 of 4)
-
-
-  Upload
-    ✓ should contain an upload box (8993ms)
-    ✓ should contain text field for file name (3721ms)
-    ✓ should contain text field for name (1653ms)
-    ✓ should contain text field for title (1591ms)
-    ✓ should contain text field for content (1337ms)
-    ✓ should contain a button to upload (1406ms)
-
-
-  6 passing (19s)
+             ┌─────────────────────────────┐
+             │ Tests:        5             │
+             │ Passing:      5             │
+             │ Failing:      0             │
+             │ Pending:      0             │
+             │ Skipped:      0             │
+             │ Screenshots:  0             │
+             │ Video:        true          │
+             │ Duration:     17 seconds    │
+             │ Spec Ran:     Login.spec.js │
+             └─────────────────────────────┘
 
 
-  (Results)
+             (Video)
 
-  ┌──────────────────────────────┐
-  │ Tests:        6              │
-  │ Passing:      6              │
-  │ Failing:      0              │
-  │ Pending:      0              │
-  │ Skipped:      0              │
-  │ Screenshots:  0              │
-  │ Video:        true           │
-  │ Duration:     18 seconds     │
-  │ Spec Ran:     Upload.spec.js │
-  └──────────────────────────────┘
+             - Started processing:   Compressing to 32 CRF
+             - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/Login.spec.js.mp4 (6 seconds)
+
+           ────────────────────────────────────────────────────────────────────────────────
+
+             Running: Upload.spec.js...                                           (4 of 4)
 
 
-  (Video)
-
-  - Started processing:   Compressing to 32 CRF
-  - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/Upload.spec.js.mp4 (7 seconds)
-
-
-================================================================================
-
-  (Run Finished)
+             Upload
+               ✓ should contain an upload box (8993ms)
+               ✓ should contain text field for file name (3721ms)
+               ✓ should contain text field for name (1653ms)
+               ✓ should contain text field for title (1591ms)
+               ✓ should contain text field for content (1337ms)
+               ✓ should contain a button to upload (1406ms)
 
 
-      Spec                                    Tests  Pass…  Fail…  Pend…  Skip…
-  ┌────────────────────────────────────────────────────────────────────────────┐
-  │ ✔ Card.spec.js                    00:19      5      5      -      -      - │
-  ├────────────────────────────────────────────────────────────────────────────┤
-  │ ✔ LeftControl.spec.js             00:13      3      3      -      -      - │
-  ├────────────────────────────────────────────────────────────────────────────┤
-  │ ✔ Login.spec.js                   00:17      5      5      -      -      - │
-  ├────────────────────────────────────────────────────────────────────────────┤
-  │ ✔ Upload.spec.js                  00:18      6      6      -      -      - │
-  └────────────────────────────────────────────────────────────────────────────┘
-    All specs passed!                 01:08     19     19      -      -      -
+             6 passing (19s)
+
+
+             (Results)
+
+             ┌──────────────────────────────┐
+             │ Tests:        6              │
+             │ Passing:      6              │
+             │ Failing:      0              │
+             │ Pending:      0              │
+             │ Skipped:      0              │
+             │ Screenshots:  0              │
+             │ Video:        true           │
+             │ Duration:     18 seconds     │
+             │ Spec Ran:     Upload.spec.js │
+             └──────────────────────────────┘
+
+
+             (Video)
+
+             - Started processing:   Compressing to 32 CRF
+             - Finished processing:  /Users/Soundtrack/Workspace/WebStrom_Workspace/pictureWeb/QiLuo-2.0/cypress/videos/Upload.spec.js.mp4 (7 seconds)
+
+           ================================================================================
+
+             (Run Finished)
+
+
+                 Spec                                    Tests  Pass…  Fail…  Pend…  Skip…
+             ┌────────────────────────────────────────────────────────────────────────────┐
+             │ ✔ Card.spec.js                    00:19      5      5      -      -      - │
+             ├────────────────────────────────────────────────────────────────────────────┤
+             │ ✔ LeftControl.spec.js             00:13      3      3      -      -      - │
+             ├────────────────────────────────────────────────────────────────────────────┤
+             │ ✔ Login.spec.js                   00:17      5      5      -      -      - │
+             ├────────────────────────────────────────────────────────────────────────────┤
+             │ ✔ Upload.spec.js                  00:18      6      6      -      -      - │
+             └────────────────────────────────────────────────────────────────────────────┘
+               All specs passed!                 01:08     19     19      -      -      -  
+
+
+
+
+
+
+
+
+
+
 
 
 
