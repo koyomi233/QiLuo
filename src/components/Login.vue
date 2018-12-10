@@ -33,12 +33,12 @@
 
         <div align="center">
           <el-form-item style = "width:300px;">
-            <el-button type = "primary" style = "width:300px; font-size: 15px; font-weight: bolder;" @click="handleLogin()">Login</el-button>
+            <el-button id="loginButton" type = "primary" style = "width:300px; font-size: 15px; font-weight: bolder;" @click="handleLogin()">Login</el-button>
           </el-form-item>
         </div>
 
         <div class = "remFor">
-          <a href ="" class = "forget">I forgot</a>
+          <a href ="http://localhost:8080/home" class = "forget">I forgot</a>
         </div>
 
       </el-form>
@@ -125,11 +125,6 @@
           this.$router.replace('/home');
         else
           this.$toast.message('Account or Password Error');
-        // if(input1 == 'hanzhiwen' && input2 == '112358'){
-        //   this.$router.replace('/home')
-        // }else{
-        //   this.$toast.message('Account or Password Error');
-        // }
       },
       fullscreen ()
       {

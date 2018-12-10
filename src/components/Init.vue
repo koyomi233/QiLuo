@@ -6,18 +6,18 @@
         <div class="m-leftcol">
           <div class="menu">
             <mu-menu placement="top-start" open-on-hover>
-              <mu-button color="primary" @click="goToList">Damask</mu-button>
+              <mu-button id="muButton" color="primary" @click="goToList">Damask</mu-button>
               <mu-list slot="content">
-                <mu-list-item button @click="goToHome">
+                <mu-list-item id="list1" button @click="goToHome">
                   <mu-list-item-title>Home Page</mu-list-item-title>
                 </mu-list-item>
-                <mu-list-item button>
+                <mu-list-item id="list2" button>
                   <mu-list-item-title>Discover</mu-list-item-title>
                 </mu-list-item>
-                <mu-list-item button>
+                <mu-list-item id="list3" button>
                   <mu-list-item-title>Latest</mu-list-item-title>
                 </mu-list-item>
-                <mu-list-item button @click="goToUpload">
+                <mu-list-item id="list4" button @click="goToUpload">
                   <mu-list-item-title>Upload</mu-list-item-title>
                 </mu-list-item>
               </mu-list>

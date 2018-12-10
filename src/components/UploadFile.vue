@@ -16,11 +16,11 @@
     <br/>
 
     <mu-container>
-      <mu-text-field v-model="value4" label="File name" label-float></mu-text-field><br/>
-      <mu-text-field v-model="value1" label="Name" label-float :max-length="20"></mu-text-field><br/>
-      <mu-text-field v-model="value2" label="Title" label-float :max-length="50"></mu-text-field><br/>
-      <mu-text-field v-model="value3" label="Content" label-float multi-line :rows="3" :max-length="300"></mu-text-field><br/>
-      <mu-button color="#8c9eff" @click="submitPicture">
+      <mu-text-field id="t1" v-model="value4" label="File name" label-float></mu-text-field><br/>
+      <mu-text-field id="t2" v-model="value1" label="Name" label-float :max-length="20"></mu-text-field><br/>
+      <mu-text-field id="t3" v-model="value2" label="Title" label-float :max-length="50"></mu-text-field><br/>
+      <mu-text-field id="t4" v-model="value3" label="Content" label-float multi-line :rows="3" :max-length="300"></mu-text-field><br/>
+      <mu-button id="uploadBut" color="#8c9eff" @click="submitPicture">
         Collect!
         <mu-icon right value="send"></mu-icon>
       </mu-button>

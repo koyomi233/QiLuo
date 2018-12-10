@@ -8,9 +8,9 @@
     </div>
 
     <mu-container>
-      <mu-card style="width: 100%; max-width: 500px; margin: 0 auto;" v-for="index in pictures" :key="index.id">
+      <mu-card id="muCard" style="width: 100%; max-width: 500px; margin: 0 auto;" v-for="index in pictures" :key="index.id">
         <mu-card-header title="Myron Avatar" sub-title="sub title">
-          <mu-avatar slot="avatar">
+          <mu-avatar id="avatar" slot="avatar">
             <img :src="index.url">
           </mu-avatar>
         </mu-card-header>
@@ -24,11 +24,11 @@
           {{index.content}}
         </mu-card-text>
         <mu-card-actions class="button-wrapper">
-          <mu-button flat @click="editCard(index._id)">
+          <mu-button id="b1" flat @click="editCard(index._id)">
             Edit
             <mu-icon right value="edit"></mu-icon>
           </mu-button>
-          <mu-button flat @click="deleteCard(index._id)">
+          <mu-button id="b2" flat @click="deleteCard(index._id)">
             Delete
             <mu-icon right value="delete"></mu-icon>
           </mu-button>
