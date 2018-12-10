@@ -8,10 +8,4 @@ cache:
 script:
 - npm start
 - npx cypress run
-deploy:
-  provider: surge
-  skip_cleanup: true
-  domain: honorable-direction.surge.sh
-  project: ./dist
-  on:
-    branch: master
+
