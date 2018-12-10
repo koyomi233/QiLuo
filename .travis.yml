@@ -9,6 +9,7 @@ before_script:
 - npm install -g httpserver
 - cd dist && httpserver -p 8080 &
 script:
+- npm start
 - npx cypress run
 deploy:
   provider: surge
