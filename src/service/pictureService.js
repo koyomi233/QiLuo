@@ -4,6 +4,9 @@ export default {
   fetchPictures () {
     return Api().get('/picture')
   },
+  fetchName(name){
+    return Api().get(`/picture/names/${name}`)
+  },
   postPicture (picture) {
     return Api().post('/picture', picture,
       { headers: {'Content-type': 'application/json'} })

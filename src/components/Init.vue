@@ -74,7 +74,7 @@
         setTimeout(() => {
           loading.close();
         }, 2000);
-        this.$router.replace('/home');
+        this.$router.push('/home');
       },
       goToList(){
         this.isList = true;
@@ -84,7 +84,7 @@
         setTimeout(() => {
           loading.close();
         }, 2000);
-        this.$router.replace('/home');
+        this.$router.push('/home');
       },
       goToUpload(){
         this.isUpload = true;
@@ -94,7 +94,7 @@
         setTimeout(() => {
           loading.close();
         }, 2000);
-        this.$router.replace('/home');
+        this.$router.push('/home');
       }
     },
     mounted() {

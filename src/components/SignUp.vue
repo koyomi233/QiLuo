@@ -29,17 +29,21 @@
         </div>
 
         <div class = "form-control">
-          <el-input type = "text"  auto-complete = "off" placeholder = "E-mail address / Qiluo ID" class = "form-control" ></el-input>
-          <el-input type = "password" auto-complete = "off" placeholder = "Password" class = "form-control" ></el-input>
+          <el-input id = "username"  auto-complete = "off" placeholder = "E-mail address / Qiluo ID" class = "form-control" ></el-input>
+          <el-input id = "password" auto-complete = "off" placeholder = "Password" class = "form-control" ></el-input>
         </div>
 
         <br>
 
         <div align="center">
           <el-form-item style = "width:300px;">
-            <el-button type = "primary" style = "width:300px; font-size: 15px; font-weight: bolder;" >Sign Up Now</el-button>
+            <el-button type = "primary" style = "width:300px; font-size: 15px; font-weight: bolder;" @click="signUpAccount">Sign Up Now</el-button>
           </el-form-item>
         </div>
+
+        <a href="/github/login">
+          <Icon type="github" style="fontSize: 20;"/>
+        </a>
 
       </el-form>
     </div>
@@ -48,6 +52,8 @@
 </template>
 
 <script>
+  import AccountService from '../service/accountService'
+  
   export default {
     name: 'login',
     data() {
@@ -83,6 +89,36 @@
       };
     },
     methods: {
+      signUpAccount(){
+        var input1 = document.getElementById('username').value;
+        var input2 = document.getElementById('password').value;
+        var account = {
+          "introduction": "",
+          "avatar": "",
+          "name": input1,
+          "password": input2,
+          "email": input1
+        };
+        if (input1 === '' || input2 === ''){
+          this.$alert('You must enter correct email or password!', 'Alert', {
+            okLabel: 'OK'
+          })
+        }else{
+          AccountService.creatAccount(account)
+            .then(response => {
+              console.log(response);
+              this.$alert('You have successfully create an account！', 'INFO', {
+                okLabel: 'OK'
+              }).then(() => {
+                this.$router.push('/')
+              });
+            })
+            .catch(error => {
+              this.errors.push(error)
+              console.log(error)
+            });
+        }
+      },
       loading ()
       {
         this.loading2 = true;
@@ -110,7 +146,7 @@
     border-radius: 15px;
     -moz-border-radius: 5px;
     background-clip: padding-box;
-    margin: 110px auto;
+    margin: 20px auto;
     width: 370px;
     padding: 35px 35px 15px 35px;
     background: rgba(255,255,255,0.8)

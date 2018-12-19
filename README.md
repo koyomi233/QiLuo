@@ -1,4 +1,4 @@
-# Assignment 2 - Vue app - Automated development process.
+# Assignment 2 - Vue app - Client.
 
 Name:  Zhiwen Han
 
@@ -6,12 +6,31 @@ Student No.:  20082239
 
 ## Overview.
 
-  A picture collection web application which contains two models: picture and account.
+  The complete project can be cloned or downloaded on https://github.com/koyomi233/QiLuo.git
+
+  This is a picture collection web application which contains three models: picture, account and board.
   You can upload pictures with articles, or just see other's pictures and collect.
+
   The basic CRUD is realized in this application.
 
-## E2E Testing.
+  The API endpoints of server please turn to my QiLuo_Server (https://github.com/koyomi233/QiLuo_Server.git),
+  and see the README.md.
 
+  The complete demo video can be seen on
+
+## Functionality.
+
+  + Login: Traditional account login, use MongoDB to store account information. Support 3rd part logins (GitHub).
+  + Sign Up: You can sign up account in this app.
+  + Picture shown: It has two different pages to show you all the pictures you have had already. You can use fuzzy queries
+                   to search the pictures you want on one of them, or you can do edit or delete operation on the other page.
+  + Edit picture: You can edit the information of each picture such as name, title and content.
+  + Delete picture: You can delete any picture by following the instruction.
+  + Upload picture: You can upload picture together with an article by following the instruction.
+  + UI Guidelines: Many necessary instructions have been compiled into the app, such as tooltip.
+  + 3rd APIs: Including a 3rd part login and  two 3rd part material design UI such as Muse-UI and Element-UI.
+
+## E2E Testing Results.
 
      $ npx cypress run --spec cypress/integration/Upload.spec.js
      Running: Upload.spec.js...                                           (4 of 4)

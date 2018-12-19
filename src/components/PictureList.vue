@@ -10,7 +10,7 @@
           <!--<mu-auto-complete :data="fruits" label="最多显示五条搜索数据" :max-search-results="5" v-model="value2"></mu-auto-complete>-->
         <!--</mu-col>-->
         <mu-col span="12" lg="4" sm="6">
-          <mu-auto-complete :data="fruits" label="Search..." :max-search-results="5"  v-model="value3" open-on-focus></mu-auto-complete>
+          <mu-auto-complete :data="picName" label="Search..." :max-search-results="5"  v-model="value3" open-on-focus  action-icon="search" @keyup.enter="findByName(value3)"></mu-auto-complete>
         </mu-col>
       </mu-row>
     </mu-container>
@@ -41,7 +41,7 @@
     data() {
       return {
         pictures: [],
-        fruits: [],
+        picName: [],
         value1: '',
         value2: '',
         value3: ''
@@ -50,9 +50,16 @@
     created() {
       this.loadCards();
     },
+    watch: {
+      pictures: function () {
+        var _this = this;
+        _this.$nextTick(function () {
+          _this.loadNames();
+        })
+      }
+    },
     computed: {},
     mounted() {
-
     },
     methods: {
       loadCards: function(){
@@ -68,9 +75,22 @@
           })
       },
       loadNames: function () {
+        var names = [];
         this.pictures.forEach(function (pic) {
-          this.fruits.push(pic.name);
-        })
+          names.push(pic.name);
+        });
+        this.picName = names;
+        console.log(this.picName);
+      },
+      findByName: function (name) {
+        PictureService.fetchName(name)
+          .then(response => {
+            this.pictures = response.data;
+          })
+          .catch(error => {
+            this.errors.push(error);
+            console.log(error);
+          })
       }
     }
   };

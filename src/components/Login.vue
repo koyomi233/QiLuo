@@ -38,7 +38,14 @@
         </div>
 
         <div class = "remFor">
-          <a href ="http://localhost:8080/home" class = "forget">I forgot</a>
+          <a href ="http://localhost:8080/home" class = "forget" >I forgot</a>
+        </div>
+
+        <div class="thirdLogin">
+          <mu-button @click="goGithub(githubUrl+client_id)">
+            github
+            <mu-icon right value=""></mu-icon>
+          </mu-button>
         </div>
 
       </el-form>
@@ -49,6 +56,7 @@
 
 <script>
   import AccountService from '../service/accountService.js'
+  import githubpng from '../assets/github.png'
 
   export default {
     name: 'login',
@@ -60,6 +68,11 @@
     errorIcon: 'warning',
     data() {
       return {
+        githubpng,
+        githubUrl: 'https://github.com/login/oauth/authorize?client_id=',
+        client_id: '26bc147845b659e185e5',
+        client_secret: 'b44f0ba0ebe69a92c3cfe390ce5b78f1c8697a2e',
+        scope: ['user'],
         note: {
           position:"absolute",
           top:"0px",
@@ -91,7 +104,13 @@
     created(){
       this.loadAccount();
     },
+    mounted(){
+      this.keyupSubmit();
+    },
     methods: {
+      goGithub: function(url){
+        window.location.href = url
+      },
       loadAccount: function () {
         AccountService.fetchAllAccount()
           .then(response => {
@@ -153,7 +172,7 @@
     border-radius: 15px;
     -moz-border-radius: 5px;
     background-clip: padding-box;
-    margin: 110px auto;
+    margin: 20px auto;
     width: 370px;
     padding: 35px 35px 15px 35px;
     background: rgba(255,255,255,0.8)
@@ -174,10 +193,6 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     margin: 0 auto;
-  }
-  .remember{
-    width:250px;
-    text-align:left;
   }
   .forget{
     width:500px;
@@ -208,6 +223,11 @@
   .login{
     margin-top: 20px;
     margin-left: 1150px;
+  }
+  .thirdLogin{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
   }
 
 </style>

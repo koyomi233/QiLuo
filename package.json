@@ -15,9 +15,11 @@
     "cypress-gui": "cypress open"
   },
   "dependencies": {
+    "@material-ui/icons": "^3.0.1",
     "axios": "^0.18.0",
     "bootstrap-vue": "^2.0.0-rc.11",
     "element-ui": "^2.4.11",
+    "koa-router": "^7.4.0",
     "muse-ui": "^3.0.1",
     "muse-ui-message": "^0.2.1",
     "muse-ui-toast": "^0.3.0",

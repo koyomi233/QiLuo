@@ -6,5 +6,9 @@ export default {
   },
   fetchAccountByEmail (email){
     return Api().get(`/account/emails/${email}`)
+  },
+  creatAccount (account){
+    return Api().post('/account', account,
+      { headers: {'Content-type': 'application/json'} })
   }
 }
