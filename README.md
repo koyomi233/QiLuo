@@ -16,7 +16,7 @@ Student No.:  20082239
   The API endpoints of server please turn to my QiLuo_Server (https://github.com/koyomi233/QiLuo_Server.git),
   and see the README.md.
 
-  The complete demo video can be seen on
+  The complete demo video can be seen on https://youtu.be/Wy-jNDn0d1g
 
 ## Functionality.
 
